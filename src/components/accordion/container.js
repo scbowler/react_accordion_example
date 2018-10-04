@@ -2,12 +2,8 @@ import React, { Component } from 'react';
 import './accordion.css';
 
 class AccordionContainer extends Component {
-    constructor(props){
-        super(props);
-
-        this.state = {
-            items: this.setAllFalse()
-        }
+    state = {
+        items: this.setAllFalse()
     }
 
     setAllFalse(){
