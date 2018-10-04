@@ -1,0 +1,36 @@
+.accordion-container {
+    list-style-type: none;
+    padding: 0;
+}
+
+.accordion-container .collapsible-header {
+    padding: 15px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.2em;
+    position: relative;
+    cursor: pointer;
+}
+
+.accordion-container .collapsible-header > i {
+    position: absolute;
+    right: 20px;
+}
+
+.accordion-container li:nth-child(odd) .collapsible-header{
+    background-color: #0b4b87
+}
+
+.accordion-container li:nth-child(even) .collapsible-header {
+    background-color: #2f6aa1
+}
+
+.accordion-container .collapsible-body {
+    max-height: 0;
+    overflow: hidden;
+    transition: 400ms linear;
+}
+
+.accordion-container .collapsible-body.visible {
+    max-height: 600px;
+}

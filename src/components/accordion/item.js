@@ -2,12 +2,12 @@ import React, { Component } from 'react';
 
 class AccordionItem extends Component {
     render(){
-        const { children, title } = this.props;
+        const { children, isVisible, title, toggleVisible } = this.props;
         
         return (
-            <li className="accordion-item">
-                <div className="collapsible-header">{title}</div>
-                <div className="collapsible-body">{children}</div>
+            <li className="accordion-item" onClick={toggleVisible}>
+                <div className="collapsible-header">{title} <i className="material-icons">arrow_drop_down</i></div>
+                <div className={`collapsible-body ${isVisible && 'visible'}`}>{children}</div>
             </li>
         );
     }
