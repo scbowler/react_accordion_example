@@ -4,12 +4,12 @@
 }
 
 .accordion-container .collapsible-header {
-    padding: 15px;
     color: #fff;
-    font-weight: bold;
-    font-size: 1.2em;
-    position: relative;
     cursor: pointer;
+    font-size: 1.2em;
+    font-weight: bold;
+    padding: 15px;
+    position: relative;
 }
 
 .accordion-container .collapsible-header > i {
@@ -33,6 +33,7 @@
 .accordion-container .collapsible-body {
     max-height: 0;
     overflow: hidden;
+    padding: 0 25px;
     transition: 400ms linear;
 }
 

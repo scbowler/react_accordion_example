@@ -4,7 +4,7 @@ import './accordion.css';
 class AccordionContainer extends Component {
     render(){
         return (
-            <ul className="accordion-container">
+            <ul className="accordion-container easy">
                 { this.props.children }
             </ul>
         );
