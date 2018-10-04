@@ -1,43 +1,13 @@
 import React from 'react';
 import '../assets/css/app.css';
-import Accordion from './accordion';
-import AccordionItem from './accordion/item';
+import NormalExample from './normal_example';
+import EasyExample from './easy_example';
 
 const App = () => (
     <div className="container">
         <h1 className="center">Accordion Example</h1>
-        <Accordion>
-            <AccordionItem title="Item 1">
-                <h2>Item 1 content</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam deserunt maxime repellat saepe rem voluptate!</p>
-                <h3>And More Stuff</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit quasi officia repellat! Similique quibusdam enim magnam expedita repellat autem numquam.</p>
-            </AccordionItem>
-            <AccordionItem title="Item 2">
-                <h2>Item 2 content</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam deserunt maxime repellat saepe rem voluptate!</p>
-                <h3>And More Stuff</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit quasi officia repellat! Similique quibusdam enim magnam expedita repellat autem numquam.</p>
-            </AccordionItem>
-            <AccordionItem title="Item 3">
-                <h2>Item 3 content</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam deserunt maxime repellat saepe rem voluptate!</p>
-                <h3>And More Stuff</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit quasi officia repellat! Similique quibusdam enim magnam expedita repellat autem numquam.</p>
-            </AccordionItem>
-            <AccordionItem title="Item 4">
-                <h2>Item 4 content</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam deserunt maxime repellat saepe rem voluptate!</p>
-                <h3>And More Stuff</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit quasi officia repellat! Similique quibusdam enim magnam expedita repellat autem numquam.</p>
-            </AccordionItem>
-            <AccordionItem title="Item 5">
-                <h2>Item 5 content</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam deserunt maxime repellat saepe rem voluptate!</p>
-                <h3>And More Stuff</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit quasi officia repellat! Similique quibusdam enim magnam expedita repellat autem numquam.</p>
-            </AccordionItem>
-        </Accordion>
+        <NormalExample/>
+        <EasyExample/>
     </div>
 );
 
