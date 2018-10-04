@@ -1,43 +1,50 @@
-@font-face {
-    font-family: quest;
-    src: url(../fonts/quest.ttf);
-}
-
 body {
+    font-family: Arial, Helvetica, sans-serif;
     margin: 0;
+    padding: 0;
 }
 
-.app {
-    background-color: #000;
-    color: #FFF;
-    font-family: quest;
-    font-size: 30px;
-    padding: 50px;
+h1 {
+    font-size: 4em;
+}
+
+.container {
+    margin: auto;
+    width: 80%;
+}
+
+.center {
     text-align: center;
 }
 
-.app .logo {
-    height: 220px;
-    filter: drop-shadow(2px 2px 0px #FFF);
+.nav {
+    font-size: 1.5em;
+    list-style-type: none;
+    padding: 0;
 }
 
-.app h1 {
-    color: #61DAFB;
-    font-size: 5em;
-    letter-spacing: 5px;
-    margin: 0.16em;
-    text-shadow: 2px 2px 0 #FFF;
+.nav li {
+    display: inline-block;
+    padding: 12px 25px;
 }
 
-.rotate {
-    animation: spin 10s linear infinite;
+.nav li a {
+    text-decoration: none;
 }
 
-@keyframes spin {
-    from {
-        transform: rotate(0deg);
-    }
-    to {
-        transform: rotate(360deg);
-    }
+.nav li div {
+    height: 2px;
+    transform: rotateY(90deg);
+    transition: 250ms linear;
+}
+
+.nav li .active + div {
+    border-bottom: 2px solid #000;
+    height: 0;
+    transform: rotateY(0);
+}
+
+.description {
+    font-size: 1.25em;
+    padding: 10px 25px;
 }
